@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冯泽宇 - 长沙银行总行高潜校招生简历</title>
+<style>
+
+@page { size: A4; margin: 12mm 15mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, "Microsoft YaHei", "PingFang SC", "Lantinghei SC", sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #2c2c2c;
+  background: #fff;
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 14mm 18mm;
+}
+
+/* === 头部 === */
+.resume-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 2.5px solid #C8161E;
+}
+.resume-header .photo {
+  width: 66px;
+  height: 86px;
+  object-fit: cover;
+  border: 2px solid #C8161E;
+  border-radius: 3px;
+  flex-shrink: 0;
+  box-shadow: 1px 1px 4px rgba(200,22,30,0.15);
+}
+.resume-header .header-info { flex: 1; }
+.resume-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #C8161E;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+}
+.resume-header .subtitle {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.resume-header .basic-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  font-size: 11px;
+  color: #444;
+  margin-bottom: 4px;
+}
+.resume-header .basic-info span { white-space: nowrap; }
+.info-tag {
+  background: #FFF0F0;
+  color: #C8161E;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid #F0C0C0;
+  font-size: 11px;
+}
+.contact-info { font-size: 11px; color: #555; margin-top: 6px; }
+.contact-info span { white-space: nowrap; }
+
+/* === 板块 === */
+.section { margin-bottom: 12px; }
+.section h2 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #C8161E 0%, #E83840 60%, #F06060 100%);
+  padding: 4px 12px;
+  letter-spacing: 1.5px;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 3px rgba(200,22,30,0.15);
+}
+.section .section-body {
+  padding: 8px 12px;
+  background: #FFFBFB;
+  border: 1px solid #F0D0D0;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+}
+
+/* === 次级标题 === */
+h3 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #C8161E;
+  margin: 8px 0 5px 0;
+  padding: 0 8px 3px 8px;
+  border-bottom: 1px dashed #F0C0C0;
+  border-left: 3px solid #C8161E;
+}
+h3:first-child { margin-top: 0; }
+
+/* === 表格 === */
+table.md-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  margin: 6px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+table.md-table thead tr th {
+  background: linear-gradient(135deg, #C8161E, #E83840);
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  text-align: left;
+  font-size: 11.5px;
+  letter-spacing: 0.5px;
+}
+table.md-table td {
+  padding: 4px 9px;
+  border-bottom: 1px solid #f5e0e0;
+  color: #333;
+}
+table.md-table tbody tr:nth-child(even) td { background: #FFF8F8; }
+table.md-table tbody tr:nth-child(odd) td { background: #fff; }
+table.md-table tbody tr:hover td { background: #FFF0F0; }
+
+/* === 列表 === */
+ul.md-ul, ol.md-ol { padding-left: 18px; margin: 4px 0; }
+ul.md-ul li { list-style: none; position: relative; padding-left: 14px; margin: 2px 0; color: #333; }
+ul.md-ul li::before { content: "\25B8"; position: absolute; left: 0; color: #C8161E; font-size: 10px; top: 2px; }
+ol.md-ol { padding-left: 20px; margin: 4px 0; }
+ol.md-ol li { margin: 2px 0; color: #333; list-style-position: outside; }
+li strong { color: #8B0000; font-weight: 700; }
+p.md-p { margin: 3px 0; color: #333; }
+
+/* === 引用块 === */
+blockquote {
+  border-left: 3px solid #C8161E;
+  padding: 4px 12px;
+  color: #555;
+  font-size: 11.5px;
+  margin: 5px 0;
+  background: #FFF5F5;
+  border-radius: 0 3px 3px 0;
+}
+
+/* === 论文条目 === */
+.paper-item {
+  margin: 5px 0;
+  padding: 4px 8px;
+  background: #fff;
+  border-left: 3px solid #C8161E;
+  border-radius: 0 4px 4px 0;
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+.paper-item .journal { color: #666; font-style: italic; }
+.paper-item .tag {
+  display: inline-block;
+  background: #FFF0F0;
+  color: #C8161E;
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-size: 10px;
+  margin-left: 4px;
+  border: 1px solid #F0C0C0;
+}
+
+/* === 课程标签 === */
+.course-tag {
+  background: #FFF0F0;
+  color: #C8161E;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 10.5px;
+  border: 1px solid #F0C0C0;
+}
+
+/* === 方法标签 === */
+.method-tag {
+  display: inline-block;
+  background: #C8161E;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+/* === 优势卡片 === */
+.advantage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 6px 0;
+}
+.advantage-card {
+  padding: 6px 10px;
+  background: linear-gradient(135deg, #FFF5F5, #FFFFFF);
+  border: 1px solid #F0C0C0;
+  border-left: 3px solid #C8161E;
+  border-radius: 4px;
+  font-size: 11.5px;
+}
+.advantage-card .card-title {
+  font-weight: 700;
+  color: #C8161E;
+  font-size: 11.5px;
+  margin-bottom: 2px;
+}
+.advantage-card .card-desc {
+  color: #444;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* === 技能条 === */
+.skill-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin: 2px 0;
+  font-size: 11.5px;
+}
+.skill-label {
+  color: #C8161E;
+  font-weight: 700;
+  white-space: nowrap;
+  min-width: 90px;
+}
+
+@media print {
+  body { padding: 0; }
+  .section .section-body { background: #fff; }
+  table.md-table tbody tr:hover td { background: inherit; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 个人信息 ===== -->
+<div class="resume-header">
+  <img src="photo.jpg" alt="照片" class="photo">
+  <div class="header-info">
+    <h1>冯泽宇</h1>
+    <div class="subtitle">西南财经大学 · 数理金融学博士</div>
+    <div class="basic-info">
+      <span class="info-tag">籍贯：湖南湘潭</span>
+      <span class="info-tag">中共党员</span>
+      <span class="info-tag">2026年应届博士毕业生</span>
+    </div>
+    <div class="contact-info">
+      电话：18973253969 &nbsp;|&nbsp; 微信：sxjl3496 &nbsp;|&nbsp; 邮箱：sxjl3496@gmail.com
+    </div>
+  </div>
+</div>
+
+<!-- ===== 求职意向 ===== -->
+<div class="section">
+  <h2>求职意向</h2>
+  <div class="section-body">
+    <div class="skill-row">
+      <span class="skill-label">目标岗位：</span>
+      <span>长沙银行总行高潜校招生</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">意向方向：</span>
+      <span>风险管理 &nbsp;|&nbsp; 金融产品创新 &nbsp;|&nbsp; 数据分析与决策支持 &nbsp;|&nbsp; 金融科技 &nbsp;|&nbsp; 战略规划</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 教育背景 ===== -->
+<div class="section">
+  <h2>教育背景</h2>
+  <div class="section-body">
+    <table class="md-table">
+      <thead><tr><th>阶段</th><th>时间</th><th>院校</th><th>专业</th><th>学位</th></tr></thead>
+      <tbody>
+        <tr><td>博士</td><td>2021.09 — 2026.06</td><td>西南财经大学 · 数学学院</td><td>数理金融学</td><td>博士</td></tr>
+        <tr><td>硕士</td><td>2017.09 — 2020.06</td><td>湘潭大学 · 商学院</td><td>应用经济学（数理经济方向）</td><td>硕士</td></tr>
+        <tr><td>本科</td><td>2013.09 — 2017.06</td><td>湖南涉外经济学院</td><td>金融数学</td><td>学士</td></tr>
+      </tbody>
+    </table>
+    <h3>博士论文</h3>
+    <p class="md-p"><strong>《改善彩民结构与彩票销量的理论、实证及仿真研究》</strong></p>
+    <p class="md-p">构建动态优化与因果推断相结合的分析框架，研究政策干预下的消费者行为变化与市场均衡效应，融合Bellman方程理论建模、PSM-DID/DID/RDD等准实验方法与Agent-Based Modeling仿真三种方法</p>
+  </div>
+</div>
+
+<!-- ===== 核心研究能力与方法论 ===== -->
+<div class="section">
+  <h2>核心研究能力与方法论</h2>
+  <div class="section-body">
+
+    <h3>（一）金融计量与因果推断</h3>
+    <ul class="md-ul">
+      <li><strong>PSM-DID</strong>（倾向得分匹配+双重差分）：修正选择偏误，评估政策干预的因果效应 —— 可应用于信贷政策效果评估、补贴项目绩效分析</li>
+      <li><strong>RDD</strong>（断点回归）：基于阈值的因果识别 —— 可应用于信用额度决策规则评估、利率政策效果分析</li>
+      <li><strong>IV</strong>（工具变量）：控制内生性问题 —— 可应用于金融产品需求估计、风险因子隔离分析</li>
+      <li><strong>DDD</strong>（三重差分）：多层级政策交互效应分析 —— 可应用于区域差异化监管政策评估</li>
+      <li><strong>合成控制法</strong>：反事实分析 —— 可应用于分行经营绩效评估、区域经济影响测算</li>
+    </ul>
+
+    <h3>（二）动态优化与量化建模</h3>
+    <ul class="md-ul">
+      <li><strong>Bellman动态规划</strong>：多期序贯决策优化 —— 可应用于资产配置、贷款定价优化、跨期风险决策</li>
+      <li><strong>Monte Carlo仿真</strong>：随机模拟与风险量化 —— 可应用于VaR估计、压力测试、组合风险分析</li>
+      <li><strong>Agent-Based Modeling</strong>：多主体交互仿真 —— 可应用于市场微观结构分析、系统性风险评估</li>
+      <li><strong>贝叶斯优化</strong>：高维参数空间寻优 —— 可应用于模型校准、超参数调优、策略优化</li>
+    </ul>
+
+    <h3>（三）数据分析与建模</h3>
+    <ul class="md-ul">
+      <li><strong>面板数据建模</strong>：固定效应、随机效应、动态面板，熟练处理大规模跨期面板数据</li>
+      <li><strong>离散选择模型</strong>：Logit、Probit及其扩展，适用于消费者金融行为预测</li>
+      <li><strong>消费者行为建模</strong>：异质性分析、需求弹性估计、市场细分</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== 代表性科研成果 ===== -->
+<div class="section">
+  <h2>代表性科研成果</h2>
+  <div class="section-body">
+    <h3>已发表论文（5篇）</h3>
+
+    <div class="paper-item">
+      <span class="method-tag">PSM-DID因果推断</span>
+      <span class="method-tag">政策评估</span><br>
+      吴朝霞, <strong>冯泽宇（通讯作者）</strong>. 排污权交易政策对不同规模企业的影响研究——基于PSM-DID方法的研究[J]. <span class="journal">产业经济评论</span>, 2021(01): 119-136. <span class="tag">CSSCI来源</span>
+    </div>
+
+    <div class="paper-item">
+      <span class="method-tag">ABM仿真建模</span>
+      <span class="method-tag">商业模式</span><br>
+      刘亚军, <strong>冯泽宇（通讯作者）</strong>. 鱼与熊掌如何兼得：农产品电商上行的包容性商业模式构建策略仿真研究[J]. <span class="journal">湘潭大学学报(哲学社会科学版)</span>, 2023, 47(06): 38-45. <span class="tag">CSSCI来源</span>
+    </div>
+
+    <div class="paper-item">
+      <span class="method-tag">DID因果推断</span>
+      <span class="method-tag">消费行为</span><br>
+      Zeyu Feng. Impact of Online Lottery Sales Prohibition on the Structure of Lottery Consumers: A Time Cost Perspective in China[J]. <span class="journal">PLOS ONE</span>, 2025, 17(8). <span class="tag">JCR Q2 · SCI</span>
+    </div>
+
+    <div class="paper-item">
+      <span class="method-tag">ABM仿真</span>
+      <span class="method-tag">规则设计</span><br>
+      Zeyu Feng, Kaiwen Meng. Effects of Maximum Payout Limits on Lottery Participant Composition[J]. <span class="journal">Journal of Artificial Societies and Social Simulation</span>, 2026, 29(1): 112–135. <span class="tag">SSCI</span>
+    </div>
+
+    <div class="paper-item">
+      <span class="method-tag">DDD三重差分</span>
+      <span class="method-tag">收入异质性</span><br>
+      Zeyu Feng. Convenience and Inequality: How Income Shapes the Effect of Accessibility on Sports Lottery Participation in China[J]. <span class="journal">Social Choice and Welfare</span>, 2026, 66(2): 287–314. <span class="tag">SSCI</span>
+    </div>
+
+    <h3>在审论文（2篇）</h3>
+    <div class="paper-item">
+      <span class="method-tag">RDD断点回归</span><br>
+      冯泽宇. 收入异质性视角下购彩便利性对体育竞猜型彩票购买的影响. <span class="journal">消费经济</span>（在审）
+    </div>
+    <div class="paper-item">
+      <span class="method-tag">面板数据分析</span><br>
+      冯泽宇. 彩票消费的双重预期驱动：来自金融情绪与经济信心的证据. <span class="journal">财经研究</span>（在审）
+    </div>
+  </div>
+</div>
+
+<!-- ===== 项目与实践经历 ===== -->
+<div class="section">
+  <h2>项目与实践经历</h2>
+  <div class="section-body">
+    <h3>博士论文研究项目（独立主导，2021–2026）</h3>
+    <ul class="md-ul">
+      <li><strong>项目规模</strong>：覆盖全国31个省份、9年面板数据，构建10,000+智能体仿真系统</li>
+      <li><strong>研究方法</strong>：理论建模（Bellman方程）+ 计量实证（PSM-DID/RDD/DDD）+ 计算仿真（ABM）三法融合</li>
+      <li><strong>核心成果</strong>：独立完成从问题定义、数据采集、模型构建到论文撰写的全流程，5篇论文已发表（含SCI/SSCI/CSSCI），代码完全开源</li>
+      <li><strong>能力体现</strong>：项目管理、数据工程、模型构建、结果沟通 —— 具备独立承接复杂量化研究项目的闭环能力</li>
+    </ul>
+
+    <h3>高校教学与协作经历（2017–2026，累计500+课时）</h3>
+    <ul class="md-ul">
+      <li><strong>湖南科技大学</strong>（2025.09–2026.01）：外国语学院外聘教师，讲授高等数学</li>
+      <li><strong>西南财经大学</strong>（2022.09–2025.02）：数学分析、高等数学教学助理</li>
+      <li><strong>成都中医药大学</strong>（2022–2024）：外聘教师，讲授高等数学</li>
+      <li><strong>能力体现</strong>：擅长将复杂理论转化为通俗表达，具备跨学科沟通与团队协作能力</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== 学术会议与获奖 ===== -->
+<div class="section">
+  <h2>学术会议与获奖</h2>
+  <div class="section-body">
+    <table class="md-table">
+      <thead><tr><th>时间</th><th>会议</th><th>奖项</th></tr></thead>
+      <tbody>
+        <tr><td>2024年</td><td>中国经济学年会（北京大学国家发展研究院）</td><td>入选</td></tr>
+        <tr><td>2024年</td><td>中国金融学年会（厦门大学王亚南经济研究院）</td><td>入选</td></tr>
+        <tr><td>2024年</td><td>第21届中国数量经济学国际学术会议</td><td>入选</td></tr>
+        <tr><td>2025年</td><td>体育经济论坛（第五届，北京体育大学）</td><td>三等奖</td></tr>
+        <tr><td>2024年</td><td>中国优选法统筹法与经济数学研究会</td><td>入选</td></tr>
+        <tr><td>2025年</td><td>European Conference on Model and Simulation</td><td>入选</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== 数据分析与技术能力 ===== -->
+<div class="section">
+  <h2>数据分析与技术能力</h2>
+  <div class="section-body">
+    <h3>数据分析与编程</h3>
+    <ul class="md-ul">
+      <li><strong>Python</strong>（NumPy, Pandas, Matplotlib, PyEcharts）：大规模数据处理、统计建模、可视化分析</li>
+      <li><strong>Stata</strong>：计量经济学建模与因果推断分析</li>
+      <li><strong>MySQL</strong>：数据库查询、管理与结构化数据处理</li>
+      <li><strong>LaTeX</strong>：专业技术文档撰写与排版</li>
+    </ul>
+    <h3>金融科技应用能力</h3>
+    <ul class="md-ul">
+      <li><strong>大语言模型应用</strong>：RAG知识库构建、AI辅助编程与数据分析</li>
+      <li><strong>NetLogo</strong>：复杂系统仿真建模</li>
+      <li><strong>Git</strong>：版本控制与协作开发，博士论文代码完全开源至GitHub</li>
+      <li><strong>数据可视化</strong>：PyEcharts、Metabase</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== 综合优势 ===== -->
+<div class="section">
+  <h2>综合优势</h2>
+  <div class="section-body">
+    <div class="advantage-grid">
+      <div class="advantage-card">
+        <div class="card-title">深厚的数理金融功底</div>
+        <div class="card-desc">本硕博三阶段金融数学→数理经济→数理金融的完整训练，具备从理论建模到实证检验的全链条研究能力</div>
+      </div>
+      <div class="advantage-card">
+        <div class="card-title">精准的因果推断能力</div>
+        <div class="card-desc">熟练掌握PSM-DID、RDD、IV、DDD等主流准实验方法，可直接应用于信贷政策评估、产品效果分析、风控策略验证</div>
+      </div>
+      <div class="advantage-card">
+        <div class="card-title">跨学科融合视野</div>
+        <div class="card-desc">数学+经济学+计算机的交叉背景，能够将计量方法、仿真建模与数据分析技术融合应用于金融决策支持</div>
+      </div>
+      <div class="advantage-card">
+        <div class="card-title">优秀的表达与协作能力</div>
+        <div class="card-desc">500余学时教学经验，擅长将复杂模型转化为通俗表达，能够高效支撑跨部门协作与管理层汇报</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
